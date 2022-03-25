@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Hawker Stall Locator</string>
+    <string name="hawker_search">Search Hawker</string>
+    <string name="hawker_recommends"> Hawkers by Recommendation Order</string>
+    <string name="hawker_alphabet"> Hawkers by Alphabetical Order</string>
+</resources>

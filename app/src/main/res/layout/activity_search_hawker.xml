@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F1E6"
+    tools:context=".SearchHawker">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:background="#FF9800"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="106dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:srcCompat="@drawable/guitiao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:rotationX="6"
+            android:shadowColor="#FFFFFF"
+            android:text="Search Hawker Stall"
+            android:textColor="#170202"
+            android:textColorHighlight="#290606"
+            android:textColorLink="#8C4A4A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EAE9E3"
+        android:hint="Enter the name of hawker stall"
+        android:textColor="@color/black"
+        android:textColorHint="#8A8885" />
+
+    <Button
+        android:id="@+id/my_search"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:text="Search"
+        app:backgroundTint="#FF9800"
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconTint="#FFFFFF" />
+
+    <ScrollView
+        android:id="@+id/scroll_me"
+        android:layout_width="match_parent"
+        android:layout_height="462dp">
+
+        <LinearLayout
+            android:id="@+id/boxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

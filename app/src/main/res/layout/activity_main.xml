@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_hawkers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1E6"
+    android:orientation="vertical"
+    android:name=".MainActivity"
+    android:exported="true">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="386dp"
+        android:layout_weight="1"
+        android:background="#F3F1E6"
+        app:srcCompat="@drawable/stall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="474dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/hawkerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hawker Stall Locator"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FF9800"
+            android:textFontWeight="900" />
+
+        <Button
+            android:id="@+id/hawker_search"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hawker_search"
+            app:backgroundTint="#FF9800" />
+
+        <Button
+            android:id="@+id/hawker_recommends"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hawker_recommends"
+            app:backgroundTint="#FF9800" />
+
+        <Button
+            android:id="@+id/hawker_alphabet"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hawker_alphabet"
+            app:backgroundTint="#FF9800" />
+    </LinearLayout>
+</LinearLayout>
